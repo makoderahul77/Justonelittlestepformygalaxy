@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday [ Tanvi ]</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Arial', sans-serif;
+      overflow: hidden;
+    }
+    
+    .message {
+      font-size: 3em;
+      font-weight: bold;
+      color: #fff;
+      opacity: 0;
+      animation: fadeIn 3s forwards;
+    }
+
+    .heart {
+      font-size: 5em;
+      animation: heartBeat 2s infinite;
+      color: #ff4c5b;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes heartBeat {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    .balloons {
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: floatBalloons 10s infinite;
+    }
+
+    .balloon {
+      font-size: 2em;
+      margin: 10px;
+      animation: float 5s infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes floatBalloons {
+      0% { bottom: -50px; }
+      100% { bottom: 100vh; }
+    }
+  </style>
+</head>
+<body>
+  <div class="message">Happy Birthday [ Tanvi ]!</div>
+  <div class="heart">❤️</div>
+  <div class="balloons">
+    <div class="balloon">🎈</div>
+    <div class="balloon">🎈</div>
+    <div class="balloon">🎈</div>
+  </div>
+</body>
+</html>
